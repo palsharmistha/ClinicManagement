@@ -1,5 +1,7 @@
 package demo.healthmonitoring.entities;
 
+import java.time.LocalDate;
+
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -15,7 +17,7 @@ public class Patient {
     private String name;
     private int age;
     private String healthIssue;
-
+    private LocalDate dateOfVisit;
     // Default constructor
     public Patient() {}
 
@@ -57,6 +59,12 @@ public class Patient {
 
     public void setHealthIssue(String healthIssue) {
         this.healthIssue = healthIssue;
+    }
+    public LocalDate getDateOfVisit() {
+        return dateOfVisit;
+    }
+    public void setDateOfVisit(LocalDate dateOfVisit) {
+        this.dateOfVisit = dateOfVisit;
     }
 
     @Override

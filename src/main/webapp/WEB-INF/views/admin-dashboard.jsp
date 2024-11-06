@@ -61,5 +61,10 @@
             <a href="/reports">View Reports</a>
         </div>
     </div>
+    
 </body>
+<footer style="text-align: center; margin-top: 300px; padding: 10px; background-color: #f4f4f4;">
+    <p>&copy; 2024 Sharmistha Pal. All rights reserved.</p>
+</footer>
+
 </html>

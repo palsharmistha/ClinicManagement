@@ -49,12 +49,27 @@
         .btn:hover {
             background-color: #0056b3;
         }
+         .dashboard-link {
+        font-size: 18px;
+        color: white;
+        text-decoration: none;
+        padding: 10px 20px;
+        background-color: #0056b3;
+        border-radius: 5px;
+        margin-right: 20px;
+    }
+
+    .dashboard-link:hover {
+        background-color: #00408b;
+    }
     </style>
 </head>
 <body>
 
     <div class="header">
         <h1>Add Patient</h1>
+                    <a href="/admin-dashboard" class="dashboard-link">Dashboard</a>
+        
     </div>
 
     <div class="container">
@@ -71,9 +86,17 @@
                 <label for="healthIssue">Health Issue</label>
                 <input type="text" id="healthIssue" name="healthIssue" required>
             </div>
+            <div class="form-group">
+                <label for="dateOfVisit">Date of Visit</label>
+                <input type="date" id="dateOfVisit" name="dateOfVisit" required>
+            </div>
             <button type="submit" class="btn">Add Patient</button>
         </form>
     </div>
-
+	
 </body>
+<footer style="text-align: center; margin-top: 70px; padding: 10px; background-color: #f4f4f4;">
+    <p>&copy; 2024 Sharmistha Pal. All rights reserved.</p>
+</footer>
+	
 </html>
